@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Acts2 Church, Gretna, NE</title>
+  <%= favicon_link_tag 'favicon.png' %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="container">
+    <!--This is the logo for A2 that is placed in the top-left corner of the screen-->
+    <div class="logo"><a href="/" ><img src="/assets/A2logoweb.jpg"  width=497 height=79 border=0 alt="The Acts 2 Church - Love God Love One Another Love All"></a></div>
+    <div class="menu" background="/assets/Sidebar.jpg" >
+      <img id="sidebar" src="/assets/Sidebar.jpg" />
+      <!--This is the navigation menu structure that is found on the left side of the screen-->
+      <ul id="nav">
+        <a href="/whoweare"><li>Who We Are</li></a>
+        <a href="/whatwebelieve"><li>What We Believe</li></a>
+        <a href="/loveGod"><li>Love God</li></a>
+        <a href="/loveOneAnother"><li>Love One Another</li></a>
+        <a href="/loveAll"><li>Love All</li></a>
+        <a href="/podcasts"><li>Media</li></a>
+        <a href="/calendar"><li>Calendar</li></a>
+      </ul>
+    </div>
+
+    <!--This contains the Content border and the picture-->
+    <div class="content" >
+      <img id="border" src="/assets/Content.jpg">
+      
+      <%= yield %>
+    
+    </div>
+    <div class="bottom"><!--This Contains the information listed at the very bottom of the screen-->
+      <p class="bottom">
+        <b> THE ACTS2 CHURCH MEETS SUNDAY MORNINGS AT 10:00 AM</b><br/>
+        <b>Address:</b> 20362 Husker Dr Gretna, NE 68028<b> | PHONE:</b>  (402) 320-1178 <b>| 
+          EMAIL: </b><a class="nostyle" href="mailto:a2gretna@gmail.com">a2gretna@gmail.com</a>
+      </p>
+      <!-- This contains the LiveWire Technical Services button that is shown on the bottom of the webpage -->
+      <a class="livewire" href="http://www.livewirets.com">
+        <img src="/assets/livewire.jpg" width=150px height=15px border=0 alt="Website design and hosting by Livewire Technical Services">
+      </a>
+    </div>
+  </div>
+</body>
+</html>

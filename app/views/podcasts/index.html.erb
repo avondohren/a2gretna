@@ -1,0 +1,34 @@
+<!-- Content Section -->
+<div id="picture">
+	<img src="assets/background2.jpg"  width=354 height=354 border=0 style="padding-left: 100px" >
+</div>
+
+<!-- ITunes Link -->
+<!-- <div class="itunes"><a href="itpc://a2gretna.org/Media/feed.xml"><img src="assets/itunes-logo.jpg" alt="Subscribe to this podcast with iTunes" title="Subscribe to this podcast with iTunes" border="0" HEIGHT="25" /></a></div> -->
+<!-- Marriage Link -->
+<div class="priest"><a href="Media/media/marriage.mp3"><img src="assets/Hat.png" alt="Marriage" title="Marriage" border="0" HEIGHT="25"/></a></div>
+<!-- Acts 2 Movie Mentions Link -->
+<div class="a2mm"><a href="http://www.imdb.com/list/t-rxVjaPJOc/"><img src="assets/a2mm.jpg" alt="Acts2 Movie Mentions" title="Acts2 Movie Mentions" border="0" HEIGHT="25"/></a></div>
+
+<div class="textbox">	
+	<ul id="sermons">
+    <% @podcasts.each do |podcast| %>
+    <li><%= podcast.date %> </small><a class="mp3" href="<%= podcast.url %>"><%= podcast.series %>: <%= podcast.title %></a> <small><%= podcast.description %></small><br />
+      <div>
+      <audio class="podcast" controls preload="metadata">
+        <source src="<%= podcast.url %>" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      </div>
+  	</li>
+    <% end %>
+	</ul> 
+</div>
+<div class="heading">
+  <% if session[:user_id] %>
+    <%= link_to 'New Podcast', new_podcast_path %>
+  <% end %>
+	<h1 class="red">SERMON <span class="black">RECORDINGS</span></h1>
+</div>
+
+

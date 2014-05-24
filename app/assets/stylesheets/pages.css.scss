@@ -1,0 +1,104 @@
+body { margin: 0px; padding: 0px; text-align: left; height: 100%; width: 100%; font-family: "Trebuchet MS", Verdana, Arial;}
+div#container { margin-left: auto; margin-right: auto; width:820px; }
+
+div.logo { padding:14px; }
+div.menu { position: relative; width:212px; float: left; }
+div.content { position: relative; float: right; }
+div.heading { position:absolute; bottom:6%; right:5%; z-index: 2; background: white; }
+div.textbox { position:absolute; top: 45px; left:15px; width: 570px; height: 315px; z-index: 2;}
+div.love { position:absolute; top: 0; left:130px; width: 450px; height: 315px; z-index: 2;}
+div.bottom { position: relative; top: 10px; text-align: center; clear:both; font-family: "Trebuchet MS", Verdana, Arial;}
+
+div.a2mm { position:absolute; top:15px; left:525px; z-index:2; }
+div.priest { position:absolute; top:15px; left:500px; z-index:2; }
+div.itunes { position:absolute; top:15px; left:425px; z-index:2; }
+
+#calendar { position: absolute; left: 3%; top: 4%; z-index: 1; }
+#currentRecordings { position: absolute; left: 3%; bottom: 6%; z-index: 1; }
+#sermons { list-style-type: none; font-size: 14px; padding: 3px; }
+
+
+p { font-size:12px; margin: 0;}
+h1 { font-size:18px; font-weight: bold; padding: 0px; margin: 0px;}
+h2 { font-size:16px; font-weight: bold; margin-bottom: 0px; }
+.red { color: #7f0909; }
+.black { color: black; }
+.mp3 {color:#7f0909; }
+.body { 	font-size: 12px; line-height: 15px; font-weight: bold; margin: 0; }
+
+object#slideshow {
+	position: absolute;
+	top: 12px;
+	left: 15px;
+	z-index: 1;
+}
+
+#picture {
+	position: absolute;
+	top: 12px;
+	left: 15px;
+}
+
+#mediaScroll {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 570px; 
+	height: 315px; 
+	overflow-y:auto;
+	z-index: 1;
+}
+
+#scrollbox {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	width: 570px; 
+	height: 315px; 
+	overflow-y:auto;
+	z-index: 1;
+}
+
+#nav, #nav ul {
+	position: absolute;
+	top: 30px;
+	left: 14px;
+	padding: 0;
+	margin: 0;
+	z-index: 2;
+	list-style-type: none;
+	font-family: "Trebuchet MS", Verdana, Arial;
+    font-size: 20px;
+}
+
+#nav li {
+	width: 165px;
+	height: 25px;
+	background: #7f0909;
+    color: white;
+    padding:3px 4px 3px 15px;
+}
+#nav li:hover {
+        background: #b03a3a;
+}
+
+#nav a {
+    text-decoration: none;
+    color: white;
+}
+
+div.content_block {
+position: absolute;
+top: 15px;
+left: 25px;
+}
+
+div.content_img {
+position: absolute;
+top: 15px;
+left: 15px;
+border-radius: 7px;
+padding: 0;
+margin: 0;
+height: 350px;
+}
