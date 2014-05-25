@@ -4,7 +4,7 @@ class PodcastsController < ApplicationController
   # GET /podcasts
   # GET /podcasts.json
   def index
-    @podcasts = Podcast.order("date DESC").last(5)
+    @podcasts = Podcast.order("date DESC").first(5)
 
     respond_to do |format|
       format.html # index.html.erb
