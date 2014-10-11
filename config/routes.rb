@@ -9,6 +9,8 @@ A2gretna::Application.routes.draw do
   get '/loveAll', to: 'pages#loveAll'
   get '/calendar', to: 'pages#calendar'
   
+  get '/podcasts/archives', to: 'podcasts#archives'
+  
   resources :logins, :only => [:new, :create, :destroy]
   resources :podcasts
   resources :users

@@ -11,6 +11,15 @@ class PodcastsController < ApplicationController
       format.json { render json: @podcasts }
     end
   end
+  
+  def archives
+    @podcasts = Podcast.order("date DESC").offset(5)
+    
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @podcasts }
+    end
+  end
 
   # GET /podcasts/1
   # GET /podcasts/1.json
