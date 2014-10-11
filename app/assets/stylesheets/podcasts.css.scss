@@ -11,6 +11,16 @@
 }
 
 ul#sermons li {
-font-size: 16px;
-font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#myS3Uploader {
+  position: relative;
+}
+
+.js-progress-bars {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
 }

@@ -1,3 +1,12 @@
+<%= s3_uploader_form key: "${filename}", key_starts_with: "", id: "myS3Uploader" do %>
+  <%= file_field_tag :file %>
+<% end %>
+<div class="upload js-progress-bars">
+  <div class="progress">
+    <div class="bar"> </div>
+  </div>
+</div>
+
 <%= form_for(@podcast) do |f| %>
   <% if @podcast.errors.any? %>
     <div id="error_explanation">
