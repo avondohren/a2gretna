@@ -1,5 +1,5 @@
 class PodcastsController < ApplicationController
-  before_filter :authorize, :except => [:index, :show]
+  before_filter :authorize, :except => [:index, :show, :archives]
   
   # GET /podcasts
   # GET /podcasts.json
