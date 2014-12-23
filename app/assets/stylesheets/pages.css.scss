@@ -8,6 +8,7 @@ div.heading { position:absolute; bottom:6%; right:5%; z-index: 2; background: wh
 div.textbox { position:absolute; top: 45px; left:15px; width: 570px; height: 315px; z-index: 2;}
 div.love { position:absolute; top: 0; left:130px; width: 450px; height: 315px; z-index: 2;}
 div.bottom { position: relative; top: 10px; text-align: center; clear:both; font-family: "Trebuchet MS", Verdana, Arial;}
+div.scrolly {height: 275px; overflow-y: scroll;}
 
 div.a2mm { position:absolute; top:15px; left:525px; z-index:2; }
 div.priest { position:absolute; top:15px; left:500px; z-index:2; }

@@ -1,11 +1,20 @@
 class PodcastsController < ApplicationController
-  before_filter :authorize, :except => [:index, :show]
+  before_filter :authorize, :except => [:index, :show, :archives]
   
   # GET /podcasts
   # GET /podcasts.json
   def index
     @podcasts = Podcast.order("date DESC").first(5)
 
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @podcasts }
+    end
+  end
+  
+  def archives
+    @podcasts = Podcast.order("date DESC").offset(5)
+    
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @podcasts }

@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.ui.datepicker
+//= require s3_direct_upload
 //= require_tree .
 
 $("document").ready(function() {

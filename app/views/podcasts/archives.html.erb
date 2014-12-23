@@ -10,27 +10,18 @@
 <!-- Acts 2 Movie Mentions Link -->
 <div class="a2mm"><a href="http://www.imdb.com/list/t-rxVjaPJOc/"><img src="/assets/a2mm.jpg" alt="Acts2 Movie Mentions" title="Acts2 Movie Mentions" border="0" HEIGHT="25"/></a></div>
 
-<div class="textbox">	
+<div class="textbox scrolly">	
 	<ul id="sermons">
     <% @podcasts.each do |podcast| %>
-    <li><%= podcast.date %> </small><a class="mp3" href="<%= podcast.url %>"><%= podcast.series %>: <%= podcast.title %></a> <small><%= podcast.description %></small><br />
-      <div>
-      <audio class="podcast" controls preload="metadata">
-        <source src="<%= podcast.url %>" type="audio/mpeg">
-      Your browser does not support the audio element.
-      </audio>
-      </div>
-  	</li>
+    <li><%= podcast.date %> </small><a class="mp3" href="<%= podcast.url %>"><%= podcast.series %>: <%= podcast.title %></a> <small><%= podcast.description %></small></li>
     <% end %>
 	</ul> 
 </div>
 <div class="heading">
-  <% if session[:user_id] %>
-    <%= link_to 'New Podcast', new_podcast_path %>
-  <% end %>
-	<h1 class="red">SERMON <span class="black">RECORDINGS</span></h1>
+	<h1 class="red"><span class="black">ARCHIVED</span> SERMON <span class="black">RECORDINGS</span></h1>
 </div>
 <div class="link">
-	<a href="/podcasts/archives">Archives</a>
+	<a href="/podcasts">Current Podcasts</a>
 </div>
+
 
