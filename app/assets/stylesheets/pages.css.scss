@@ -44,8 +44,8 @@ object#slideshow {
 	position: absolute;
 	top: 15px;
 	left: 15px;
-	width: 570px; 
-	height: 315px; 
+	width: 570px;
+	height: 315px;
 	overflow-y:auto;
 	z-index: 1;
 }
@@ -54,8 +54,8 @@ object#slideshow {
 	position: absolute;
 	top: 15px;
 	left: 15px;
-	width: 570px; 
-	height: 315px; 
+	width: 570px;
+	height: 315px;
 	overflow-y:auto;
 	z-index: 1;
 }
@@ -104,4 +104,28 @@ margin: 0;
 height: 350px;
 width: 574px;
 overflow: hidden;
+}
+
+.bottom.heather {
+	height: 50px;
+	margin: 0 auto;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	overflow: hidden;
+	width: 95%;
+	background-color: black;
+
+	img {
+		height: 50px;
+		float: left;
+	}
+	p {
+		color: white;
+    font-size: 18px;
+    display: block;
+    padding: 14px 50px;
+	}
 }
