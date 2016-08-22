@@ -13,7 +13,7 @@
 <div class="textbox scrolly">
 	<ul id="sermons">
     <% @podcasts.each do |podcast| %>
-    <li><%= podcast.date %> </small><a class="mp3" href="<%= podcast.url %>"><%= '#{podcast.series}: ' if podcast.series.present? %><%= podcast.title %></a> <small><%= podcast.description %></small></li>
+    <li><%= podcast.date %> </small><a class="mp3" href="<%= podcast.url %>"><%= podcast.series + ': ' if podcast.series.present? %><%= podcast.title %></a> <small><%= podcast.description %></small></li>
     <% end %>
 	</ul>
 </div>
