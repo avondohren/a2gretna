@@ -13,7 +13,7 @@
 <div class="textbox">
 	<ul id="sermons">
     <% @podcasts.each do |podcast| %>
-    <li><%= podcast.date %> </small><a class="mp3" href="<%= podcast.url %>"><%= '#{podcast.series}: ' if podcast.series.present? %><%= podcast.title %></a> <small><%= podcast.description %></small><br />
+    <li><%= podcast.date %> </small><a class="mp3" href="<%= podcast.url %>"><%= podcast.series + ': ' if podcast.series.present? %><%= podcast.title %></a> <small><%= podcast.description %></small><br />
       <div>
       <audio class="podcast" controls preload="metadata">
         <source src="<%= podcast.url %>" type="audio/mpeg">
