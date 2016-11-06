@@ -1,11 +1,11 @@
 <div class="content_block">
   <p id="notice"><%= notice %></p>
-  
+
   <p>
     <b>Date:</b>
     <%= @podcast.date %>
   </p>
-  
+
   <p>
     <b>Title:</b>
     <%= @podcast.title %>
@@ -28,5 +28,6 @@
 
 
   <%= link_to 'Edit', edit_podcast_path(@podcast) %> |
+	<%= link_to 'Delete', @podcast, :method => 'delete', confirm: "Are you sure ?" %> |
   <%= link_to 'Back', podcasts_path %>
 </div>

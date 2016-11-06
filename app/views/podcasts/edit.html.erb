@@ -4,5 +4,6 @@
   <%= render 'form' %>
 
   <%= link_to 'Show', @podcast %> |
+	<%= link_to 'Delete', @podcast, method: "delete", confirm: "Are you sure ?" %> |
   <%= link_to 'Back', podcasts_path %>
 </div>
