@@ -3,6 +3,7 @@ ruby "2.2.3"
 
 gem 'rails', '4.0.13'
 gem 'protected_attributes'
+gem 'rails_serve_static_assets', group: [:production]
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
